@@ -1,0 +1,5 @@
+/home/yangfu/Downloads/clion-2021.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/yangfu/Downloads/clion-2021.3.4/bin/ninja/linux/ninja -G Ninja /home/yangfu/CLionProjects/HtmlWebTest
+find
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yangfu/CLionProjects/HtmlWebTest/cmake-build-debug

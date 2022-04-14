@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.21)
+project(HtmlWebTest)
+
+set(CMAKE_CXX_STANDARD 14)
+find_library(MYSQL_LIB libmysqlclient.so /usr/lib/)
+if (NOT MYSQL_LIB)
+    message(FATAL_ERROR "mysqlclient not found")
+else (MYSQL_LIB)
+    message("find")
+endif(NOT MYSQL_LIB)
+add_executable(HtmlWebTest main.cpp ServerSock.cpp ServerSock.h MysqlConnect.h MysqlConnect.cpp MysqlConnect.h dealPost.h)
+target_link_libraries(${PROJECT_NAME} mysqlclient)
